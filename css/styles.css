@@ -1,0 +1,84 @@
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; /*1rem = 10px*/
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6rem;
+    background-color: #006778;
+}
+/* estilos generales */
+.form{
+    background-color: #fff;
+    min-width: 30rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+}
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00AFC1;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]{
+    border: none;
+    background-color: #0093AB;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.event-container{
+    max-width: 50rem;
+    min-width: 30rem;
+    padding: 1rem;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+.event .days{
+    width: 10rem;
+    text-align: center;
+}
+.event .days .days-number{
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+}
+.event .event-name{
+    width: 20rem;
+    padding: 1rem;
+}
+.event .event-date{
+    width: 10rem;
+    padding: 1rem;
+}
+.event .actions{
+    padding: 1rem;
+}
+@media (max-width: 400px) {
+    body{
+        font-size: 1.5rem;
+    }
+}
